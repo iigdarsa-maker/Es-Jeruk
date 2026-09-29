@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Jeruk Suwi — Segar Setiap Tegukan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-orange">🍊</div>
+            <div class="preloader-bar"><div class="preloader-fill"></div></div>
+            <p>Memuat kesegaran...</p>
+        </div>
+    </div>
+
+    <!-- CURSOR GLOW -->
+    <div id="cursor-glow"></div>
+
+    <!-- FLOATING STICKERS -->
+    <div class="sticker-field" aria-hidden="true">
+        <span class="sticker s-a">🍊</span>
+        <span class="sticker s-b">🧊</span>
+        <span class="sticker s-c">☀️</span>
+        <span class="sticker s-d">💛</span>
+        <span class="sticker s-e">✨</span>
+        <span class="sticker s-f">🥤</span>
+        <span class="sticker s-g">🌿</span>
+        <span class="sticker s-h">⭐</span>
+    </div>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="logo" data-section="home">
+            <div class="logo-icon">🍊</div>
+            <div class="logo-text">
+                <b>YUMMY</b>
+                <span>Es Jeruk Suwi</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home" class="nav-link active" data-section="home"><span>HOME</span></a>
+            <a href="#menu" class="nav-link" data-section="menu"><span>MENU</span></a>
+            <a href="#produk" class="nav-link" data-section="produk"><span>PRODUK</span></a>
+            <a href="#about" class="nav-link" data-section="about"><span>ABOUT</span></a>
+            <a href="#contact" class="nav-link" data-section="contact"><span>CONTACT</span></a>
+        </nav>
+
+        <div class="account">
+            <p>Fresh Drink · Order</p>
+            <b>Pesan Sekarang</b>
+            <small>Mulai Rp5.000</small>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home" class="nav-link" data-section="home">HOME</a>
+        <a href="#menu" class="nav-link" data-section="menu">MENU</a>
+        <a href="#produk" class="nav-link" data-section="produk">PRODUK</a>
+        <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+        <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+    </div>
+
+    <!-- PAGE TRANSITION -->
+    <div id="page-transition">
+        <div class="pt-slice"></div>
+        <div class="pt-slice"></div>
+        <div class="pt-slice"></div>
+        <div class="pt-slice"></div>
+        <div class="pt-slice"></div>
+    </div>
+
+    <!-- ===================== HOME ===================== -->
+    <section id="home" class="page-section active">
+        <div class="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape s1"></div>
+                <div class="shape s2"></div>
+                <div class="shape s3"></div>
+            </div>
+
+            <div class="hero-stickers">
+                <span class="hs hs1">🍊</span>
+                <span class="hs hs2">🧊</span>
+                <span class="hs hs3">✨</span>
+                <span class="hs hs4">💛</span>
+                <span class="hs hs5">☀️</span>
+            </div>
+
+            <div class="hero-text">
+                <p class="hero-tag reveal">✨ Segar · Alami · Nikmat</p>
+                <h1 class="reveal">
+                    <span class="line">Es</span>
+                    <span class="line accent">Jeruk</span>
+                </h1>
+                <p class="hero-sub reveal">Es Jeruk Segar & Nikmat — dibuat dari jeruk pilihan setiap hari</p>
+                <div class="hero-actions reveal">
+                    <a href="#menu" class="btn-primary nav-link" data-section="menu">
+                        <span>Pesan Sekarang</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#about" class="btn-ghost nav-link" data-section="about">Tentang Kami</a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=700&h=500&fit=crop"
+                         alt="Es Jeruk Segar"
+                         onerror="this.src='https://placehold.co/500x360/ffb300/6d3900?text=Es+Jeruk+Segar'">
+                    <div class="hero-img-glow"></div>
+                </div>
+                <div class="floating-badge b1">🍊 100% Alami</div>
+                <div class="floating-badge b2">❄️ Dingin Maksimal</div>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <div class="box reveal" data-delay="0">
+                <div class="sticker-tag">HOT</div>
+                <div class="box-icon-wrap"><span>☀️</span></div>
+                <h2>Segar Setiap Hari</h2>
+                <p>Es jeruk dibuat dari jeruk segar dengan rasa manis alami yang menyegarkan.</p>
+                <button class="btn-box nav-link" data-section="menu">Lihat Menu →</button>
+            </div>
+            <div class="box reveal" data-delay="1">
+                <div class="sticker-tag new">NEW</div>
+                <div class="box-icon-wrap"><span>🍊</span></div>
+                <h2>Es Jeruk Spesial</h2>
+                <p>Perpaduan jeruk segar, es batu kristal, dan rasa yang bikin ketagihan.</p>
+                <button class="btn-box nav-link" data-section="produk">Pesan Sekarang →</button>
+            </div>
+            <div class="box reveal" data-delay="2">
+                <div class="sticker-tag love">❤️</div>
+                <div class="box-icon-wrap"><span>🥤</span></div>
+                <h2>Minuman Favorit</h2>
+                <p>Cocok diminum saat cuaca panas, santai bersama teman maupun keluarga.</p>
+                <button class="btn-box nav-link" data-section="contact">Cari Kami →</button>
+            </div>
+        </div>
+
+        <div class="bottom" id="bottom-info">
+            <div class="bottom-col reveal">
+                <h3>🍊 Menu Favorit</h3>
+                <p>• Es Jeruk Original</p>
+                <p>• Es Jeruk Manis</p>
+                <p>• Es Jeruk Jumbo</p>
+            </div>
+            <div class="bottom-col reveal">
+                <h3>✨ Pilihan Spesial</h3>
+                <p>• Jeruk Fresh Ice</p>
+                <p>• Jeruk Extra Manis</p>
+                <p>• Jeruk Segar Premium</p>
+            </div>
+            <div class="bottom-col reveal">
+                <h3>💛 Kenapa Kami?</h3>
+                <p>• Jeruk segar harian</p>
+                <p>• Dibuat langsung</p>
+                <p>• Harga bersahabat</p>
+            </div>
+            <div class="bottom-col phone reveal">
+                <h3>📞 Order by Phone</h3>
+                <a href="tel:085706697948" class="phone-num">0857-0669-7948</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section id="menu" class="page-section">
+        <div class="section-hero">
+            <p class="section-tag reveal">🍹 Daftar Minuman</p>
+            <h1 class="reveal">Menu Kami</h1>
+            <p class="section-desc reveal">Pilihan es jeruk segar yang siap memanjakan lidahmu</p>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-card reveal" data-delay="0">
+                <div class="menu-card-top">
+                    <span class="menu-emoji">🍊</span>
+                    <span class="menu-badge">Best Seller</span>
+                </div>
+                <h3>Es Jeruk Original</h3>
+                <p>Jeruk murni diperas segar, tanpa pemanis berlebih. Rasa alami yang menyegarkan.</p>
+                <div class="menu-footer">
+                    <span class="price">Rp 5.000</span>
+                    <button class="order-btn">Pesan</button>
+                </div>
+                <div class="card-stickers"><span>✨</span><span>💛</span></div>
+            </div>
+            <div class="menu-card reveal" data-delay="1">
+                <div class="menu-card-top">
+                    <span class="menu-emoji">🍯</span>
+                </div>
+                <h3>Es Jeruk Manis</h3>
+                <p>Perpaduan jeruk segar dengan madu alami. Manis pas, tidak berlebihan.</p>
+                <div class="menu-footer">
+                    <span class="price">Rp 7.000</span>
+                    <button class="order-btn">Pesan</button>
+                </div>
+                <div class="card-stickers"><span>🐝</span></div>
+            </div>
+            <div class="menu-card reveal" data-delay="2">
+                <div class="menu-card-top">
+                    <span class="menu-emoji">🧊</span>
+                    <span class="menu-badge popular">Jumbo</span>
+                </div>
+                <h3>Es Jeruk Jumbo</h3>
+                <p>Porsi besar untuk yang haus berat. Lebih banyak jeruk, lebih puas!</p>
+                <div class="menu-footer">
+                    <span class="price">Rp 10.000</span>
+                    <button class="order-btn">Pesan</button>
+                </div>
+                <div class="card-stickers"><span>🔥</span><span>💪</span></div>
+            </div>
+            <div class="menu-card reveal" data-delay="3">
+                <div class="menu-card-top">
+                    <span class="menu-emoji">✨</span>
+                </div>
+                <h3>Jeruk Fresh Ice</h3>
+                <p>Jeruk pilihan terbaik dengan es batu kristal. Dingin maksimal.</p>
+                <div class="menu-footer">
+                    <span class="price">Rp 8.000</span>
+                    <button class="order-btn">Pesan</button>
+                </div>
+                <div class="card-stickers"><span>❄️</span></div>
+            </div>
+            <div class="menu-card reveal" data-delay="4">
+                <div class="menu-card-top">
+                    <span class="menu-emoji">🌟</span>
+                </div>
+                <h3>Jeruk Extra Manis</h3>
+                <p>Untuk pecinta rasa manis. Sirup jeruk premium yang bikin ketagihan.</p>
+                <div class="menu-footer">
+                    <span class="price">Rp 9.000</span>
+                    <button class="order-btn">Pesan</button>
+                </div>
+                <div class="card-stickers"><span>🍬</span></div>
+            </div>
+            <div class="menu-card reveal" data-delay="5">
+                <div class="menu-card-top">
+                    <span class="menu-emoji">👑</span>
+                    <span class="menu-badge premium">Premium</span>
+                </div>
+                <h3>Jeruk Segar Premium</h3>
+                <p>Jeruk berkualitas tinggi, diperas di tempat. Rasa terbaik di kelasnya.</p>
+                <div class="menu-footer">
+                    <span class="price">Rp 15.000</span>
+                    <button class="order-btn">Pesan</button>
+                </div>
+                <div class="card-stickers"><span>👑</span><span>💎</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PRODUK ===================== -->
+    <section id="produk" class="page-section">
+        <div class="section-hero">
+            <p class="section-tag reveal">🌿 Kualitas Terbaik</p>
+            <h1 class="reveal">Produk Kami</h1>
+            <p class="section-desc reveal">Semua dibuat dari bahan berkualitas, diolah dengan penuh cinta</p>
+        </div>
+
+        <div class="produk-grid">
+            <div class="produk-card reveal" data-delay="0">
+                <div class="produk-icon">🌿</div>
+                <h3>Jeruk Segar Pilihan</h3>
+                <p>Kami hanya menggunakan jeruk lokal terbaik yang dipetik setiap pagi. Segar, manis, dan kaya vitamin C.</p>
+                <div class="card-stickers"><span>🍊</span><span>🌱</span></div>
+            </div>
+            <div class="produk-card reveal" data-delay="1">
+                <div class="produk-icon">❄️</div>
+                <h3>Es Batu Kristal</h3>
+                <p>Es batu dari air mineral murni. Tidak mudah mencair, sehingga es jeruk tetap dingin lebih lama.</p>
+                <div class="card-stickers"><span>🧊</span><span>💧</span></div>
+            </div>
+            <div class="produk-card reveal" data-delay="2">
+                <div class="produk-icon">🧪</div>
+                <h3>Tanpa Pengawet</h3>
+                <p>100% alami, tanpa pengawet, tanpa pewarna buatan. Setiap gelas dibuat langsung saat dipesan.</p>
+                <div class="card-stickers"><span>✅</span><span>💚</span></div>
+            </div>
+            <div class="produk-card reveal" data-delay="3">
+                <div class="produk-icon">💚</div>
+                <h3>Ramah Lingkungan</h3>
+                <p>Kami menggunakan kemasan yang bisa didaur ulang. Nikmati kesegaran sambil menjaga bumi.</p>
+                <div class="card-stickers"><span>🌍</span><span>♻️</span></div>
+            </div>
+        </div>
+
+        <div class="produk-cta reveal">
+            <h2>Siap merasakan kesegarannya? 🍊</h2>
+            <a href="#contact" class="btn-primary nav-link" data-section="contact">
+                <span>Hubungi Kami</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="page-section">
+        <div class="section-hero">
+            <p class="section-tag reveal">💛 Cerita Kami</p>
+            <h1 class="reveal">Tentang Kami</h1>
+            <p class="section-desc reveal">Cerita di balik segelas es jeruk yang menyegarkan</p>
+        </div>
+
+        <div class="about-wrap">
+            <div class="about-text reveal">
+                <h2>Es Jeruk Suwi 🍊</h2>
+                <p>
+                    Dimulai dari ide sederhana: membuat minuman jeruk yang benar-benar segar
+                    dan terjangkau untuk semua orang. Kami percaya minuman yang baik harus
+                    dibuat dari bahan terbaik, dengan resep yang jujur.
+                </p>
+                <p>
+                    Setiap hari kami memeras jeruk segar, mencampur dengan es batu dingin,
+                    dan menyajikannya dengan penuh semangat. Tidak ada formula rahasia —
+                    hanya jeruk bagus, es dingin, dan sedikit cinta.
+                </p>
+                <p>
+                    Tim kami — <strong>Arsa, Gita, Cesta, Nayla, dan Kaila</strong> — bekerja
+                    sama untuk memastikan setiap pelanggan mendapatkan pengalaman terbaik.
+                </p>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card reveal" data-delay="0">
+                    <span class="stat-emoji">🍊</span>
+                    <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Jeruk Asli</span>
+                </div>
+                <div class="stat-card reveal" data-delay="1">
+                    <span class="stat-emoji">😊</span>
+                    <span class="stat-num" data-count="5000">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Pelanggan Bahagia</span>
+                </div>
+                <div class="stat-card reveal" data-delay="2">
+                    <span class="stat-emoji">💰</span>
+                    <span class="stat-num" data-count="5">0</span><span class="stat-suffix">rb</span>
+                    <span class="stat-label">Mulai dari</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="page-section">
+        <div class="section-hero">
+            <p class="section-tag reveal">📞 Hubungi</p>
+            <h1 class="reveal">Contact</h1>
+            <p class="section-desc reveal">Pesan sekarang atau datang langsung ke tempat kami</p>
+        </div>
+
+        <div class="contact-cards">
+            <div class="contact-card reveal" data-delay="0">
+                <div class="contact-icon">📞</div>
+                <h3>Telepon / WhatsApp</h3>
+                <a href="tel:085706697948" class="contact-value">0857-0669-7948</a>
+                <p>Buka setiap hari 08.00 – 21.00</p>
+            </div>
+            <div class="contact-card reveal" data-delay="1">
+                <div class="contact-icon">📍</div>
+                <h3>Lokasi</h3>
+                <p class="contact-value">Jl. Segar No. 12</p>
+                <p>Dekat pasar tradisional</p>
+            </div>
+            <div class="contact-card reveal" data-delay="2">
+                <div class="contact-icon">💬</div>
+                <h3>Pesan Online</h3>
+                <p class="contact-value">Chat saja!</p>
+                <p>Siap dalam 10 menit</p>
+            </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+            <h3>Kirim Pesan 🍊</h3>
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" placeholder="Nama kamu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telepon">Telepon / WA</label>
+                        <input type="tel" id="telepon" placeholder="08xx-xxxx-xxxx" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" placeholder="Pesan atau pesanan kamu..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-full">
+                    <span>Kirim Pesan</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Dibuat dengan 🧡 oleh <strong>Arsa, Gita, Cesta, Nayla, Kaila</strong></p>
+        <p class="footer-copy">Es Jeruk Suwi © 2026 · 🍊 Segar Setiap Hari</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
